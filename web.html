@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saugat Regmi | Network Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d1117;
+color:#c9d1d9;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#161b22;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:#58a6ff;
+font-size:22px;
+font-weight:600;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#c9d1d9;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#58a6ff;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero span{
+color:#58a6ff;
+}
+
+.hero p{
+max-width:600px;
+margin:20px 0;
+}
+
+.btn{
+background:#238636;
+color:white;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+color:#58a6ff;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:#161b22;
+padding:25px;
+border-radius:10px;
+border:1px solid #30363d;
+transition:0.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-6px);
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:#161b22;
+padding:20px;
+border-radius:10px;
+border:1px solid #30363d;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+.contact a{
+color:#58a6ff;
+}
+
+/* FOOTER */
+
+footer{
+background:#161b22;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Saugat Regmi</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Hello, I'm <span>Saugat Regmi</span></h1>
+
+<p>
+Network Engineer specializing in routing, switching, network security,
+and infrastructure design. Passionate about building secure and
+scalable networks.
+</p>
+
+<a href="#contact" class="btn">Hire Me</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<p>
+I am a dedicated Network Engineer with expertise in designing and
+maintaining high-performance network infrastructures. I enjoy solving
+complex networking challenges and ensuring reliable connectivity.
+</p>
+
+<p>
+My interests include network security, cloud networking, and
+automation. I continuously improve my skills through labs,
+projects, and real-world implementations.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Networking</h3>
+<p>TCP/IP, Routing, Switching, VLAN, Subnetting</p>
+</div>
+
+<div class="skill-card">
+<h3>Protocols</h3>
+<p>BGP, OSPF, DNS, DHCP</p>
+</div>
+
+<div class="skill-card">
+<h3>Tools</h3>
+<p>Wireshark, Cisco Packet Tracer, GNS3</p>
+</div>
+
+<div class="skill-card">
+<h3>Security</h3>
+<p>Firewall, VPN, IDS/IPS</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Enterprise Network Design</h3>
+<p>Designed a scalable enterprise network using VLAN segmentation and OSPF routing.</p>
+</div>
+
+<div class="project-card">
+<h3>Network Monitoring System</h3>
+<p>Built a monitoring system to analyze network traffic and device status.</p>
+</div>
+
+<div class="project-card">
+<h3>Firewall Security Lab</h3>
+<p>Implemented firewall policies and secure VPN remote access.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Email: saugat@example.com</p>
+<p>LinkedIn: linkedin.com/in/saugatregmi</p>
+<p>GitHub: github.com/saugatregmi</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Saugat Regmi | Network Engineer</p>
+
+</footer>
+
+</body>
+</html>
